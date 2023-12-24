@@ -8,7 +8,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-    fun ilkFonksiyon(){
+    fun cikarma(x:Int,y:Int){
         println("ilk fonksiyon çalıştı")
     }
 }
