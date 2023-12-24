@@ -13,6 +13,8 @@
         android:layout_width="489dp"
         android:layout_height="131dp"
         android:text="TextView"
+        android:textSize="48sp"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds"
         tools:layout_editor_absoluteX="114dp"
         tools:layout_editor_absoluteY="141dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
