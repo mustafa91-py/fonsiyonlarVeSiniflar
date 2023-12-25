@@ -29,11 +29,17 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+
     }
     fun textView4():TextView{
         // sürekli aynı widget i çağırmak için oluşturulan textView fonskiyoyunu ekrana yazdırmak için
         val textView: TextView = findViewById(R.id.textView4)
         return textView
+    }
+    fun buttonWidget():View{
+        val button:View = findViewById(R.id.button)
+        return button
+
     }
     fun button2Widget():View{
         val button2:View = findViewById(R.id.button2)
@@ -51,5 +57,19 @@ class MainActivity : AppCompatActivity() {
     fun degistir(view:View){
         val toplamaSonucu = toplama(50,10)
         textView4().text = "toplama sonucu : $toplamaSonucu"
+        sinifCalismasi()
+    }
+    fun sinifCalismasi(){
+        var superman = SuperKahraman()
+        superman.isim = "süpermen"
+        superman.meslek = "gazeteci"
+        superman.yas = 49
+        var batman = SuperKahraman()
+        batman.isim = "batman"
+        batman.meslek = "zengin"
+        batman.yas = 45
+
+        var outText = "${superman.isim} + ${batman.isim} = baydırman"
+        textView4().text = outText
     }
 }
