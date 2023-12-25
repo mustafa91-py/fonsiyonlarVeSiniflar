@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+        nullGuvenligi()
 
     }
     fun textView4():TextView{
@@ -71,5 +72,29 @@ class MainActivity : AppCompatActivity() {
 
         var outText = "${superman.isim} + ${batman.isim} = baydırman"
         textView4().text = outText
+    }
+    fun nullGuvenligi(){
+        //Null, Nullability, Null Safety
+
+        // Tanımlama Defineing
+        var benimString:String?//? Null olabilir anlamı katayor
+        //eğer !! iki ünlem koyarsak kesinlikle null olmayacak demek
+
+        //Initialization
+        benimString = "Mustafa"
+        var benimYasim: Int? = null
+        println(benimYasim)
+        // 3
+        // elvis operatörü
+        val sonuc = benimYasim?.minus(2)?:10
+        // eğer sonuc null ise 10 yazdır demel elvis operatörü
+        println(sonuc)
+
+        //4
+        //let
+        benimYasim = 5
+        benimYasim?.let {
+            println("nul değil = $it")
+        }
     }
 }
